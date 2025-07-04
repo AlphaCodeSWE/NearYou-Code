@@ -10,18 +10,6 @@ NearYou è una piattaforma che offre notifiche personalizzate agli utenti quando
 - Dashboard utente interattiva con visualizzazione mappa
 - Monitoraggio e analisi completi con Grafana e Prometheus
 
-## Architettura
-![Architettura del Sistema](docs/architecture/diagrams/architecture_overview.png)
-
-NearYou utilizza un'architettura a microservizi:
-- **Data Pipeline**: Producer e Consumer Kafka per elaborazione eventi posizione
-- **Message Generator**: Servizio di generazione messaggi personalizzati
-- **Dashboard**: Interfaccia web per visualizzare notifiche e posizioni
-- **Storage**: ClickHouse per analytics, PostgreSQL/PostGIS per dati geospaziali
-- **Cache**: Redis per memorizzare risposte LLM e migliorare performance
-
-[Documentazione architetturale dettagliata](docs/architecture/overview.md)
-
 ## Installazione e Setup
 
 ### Prerequisiti
